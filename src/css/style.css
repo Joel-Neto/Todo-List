@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(rgb(196, 0, 196), rgb(62, 0, 62));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button i {
+  pointer-events: none;
+}
+
+#todo-list-container{
+  margin: 2rem 0;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  padding: 30px 40px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#new-todo-container{
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.450);
+  display: flex;
+  gap: 10px;
+}
+
+#new-todo-input {
+  width: 80%;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border: 2px solid #bbb;
+  border-radius: 5px;
+  font-weight:500 ;
+}
+
+#new-todo-input:focus {
+  outline: none;
+  border-color: rgb(112, 0, 112);
+}
+
+#new-todo-button{
+  width: 20%;
+  font-size: 1rem;
+  color: #fff;
+  background-color: rgb(196, 0, 196);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: .4s ease;
+}
+
+#new-todo-button:hover {
+  background-color: rgb(112, 0, 112);
+}
+
+#things-todo-container{
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.450);
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(112, 0, 112);
+  font-size: 1.1rem;
+}
+
+
+.todo-item p {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.todo-item p i {
+  font-size: .4rem;
+  color: rgb(112, 0, 112);
+}
+
+.done p span{
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.todo-btn {
+  margin-left: .5rem;
+  padding: 5px 15px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: rgb(196, 0, 196);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .4s ease;
+}
+
+.todo-btn:hover {
+  background-color: rgb(112, 0, 112);
+}
+
+/* --------------------------------------------- */
+.invalid {
+  border: 2px solid rgb(176, 0, 0) !important;
+}
+
+.invalid::placeholder {
+  color: rgb(176, 0, 0);
+}
